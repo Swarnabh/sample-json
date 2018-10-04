@@ -1,17 +1,1 @@
-{
- "products": [
-{
-"name": "Levis Blue Denim",
-"imgPath": "gs1.jpg"
- },
-
-{
- "name": "Pepe Black Jeans",
- "imgPath": "gs2.jpg"
- },
- {
- "name": "Pepe Blue Jeans",
- "imgPath": "gs3.jpg"
-}
-]
-}
+data = '[{"name" : "Ashwin", "url" : "gs1.jpg"},{"name" : "Abhinandan", "url" : "gs1.jpg"}]';

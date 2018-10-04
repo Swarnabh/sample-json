@@ -9,26 +9,28 @@
       
         $(document).ready( function(){
  
-         $.getJSON("c.json", function(data) {
+         
+          var mydata = JSON.parse(data);
+
   
-         $.each(data, function(key,value) {
-         $("ul").append("<img src="+value.url+" id="image"/><li>Caption: "+value.caption+"</li><br />");
+         $.each(mydata , function(key,value) {
+         $("#cc").append('<img src='+value.url+' id="image"/><p>Caption: '+value.name+'</p><br />');
          
            });
       
          });
     
-      });
+     
     </script>
 </head>
    
    <body>
       <p>Dynamic Image loading</p>
     
-      <div>
+      <div id="cc" >
 
     
-            <ul></ul>
+            
 
     
       </div>
