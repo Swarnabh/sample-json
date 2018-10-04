@@ -1,38 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-  <script type="text/javascript" src="c.json"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	<script type="text/javascript" src="c.json"></script>
 
     <script type="text/javascript">
-      
+    	
         $(document).ready( function(){
  
          $.getJSON("c.json", function(data) {
   
          $.each(data, function(key,value) {
-         $("ul").append("<img src="+value.url+" id="image"/><li>Caption: "+value.caption+"</li><br />");
+         $("ul").append("<li>"+value.caption+"<li>");
          
            });
       
          });
     
       });
+
     </script>
 </head>
    
    <body>
       <p>Dynamic Image loading</p>
     
-      <div>
-
-    
             <ul></ul>
-
-    
-      </div>
-
       
    </body>
 </html>
