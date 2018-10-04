@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="c.json"></script>
+
+    <script type="text/javascript">
+    	
+        $(document).ready( function(){
+ 
+         $.getJSON("c.json", function(data) {
+  
+         $.each(data, function(key,value) {
+         $("ul").append("<img src="+value.url+" id="image"/><li>Caption: "+value.caption+"</li><br />");
+         
+           });
+      
+         });
+    
+      });
+
+    </script>
+</head>
+   
+   <body>
+      <p>Dynamic Image loading</p>
+    
+      <div>
+
+    
+            <ul></ul>
+
+    
+      </div>
+
+      
+   </body>
+</html>

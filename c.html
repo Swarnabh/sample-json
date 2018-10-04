@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>c</title>
+    <script type="text/javascript">
+
+$(document).ready(function () {
+ var jsonURL = "c.json";
+$.getJSON(jsonURL, function (json)
+ {
+ var imgList= "";
+ $.each(json.products, function () {
+ imgList += '<li><img src= "' + this.imgPath + '"></li>';
+ });
+ $('#dvProdList').append(imgList);
+ });
+});
+</script>
+</head>
+<body>
+<p id="dvProdList">
+    </p>
+</body>
+</html>
